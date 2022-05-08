@@ -1,31 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ffm",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Fabricfine",
+  "description": "A fabric mod to emulate optifine features for fabric whilst allowing different rendering engines such as sodium",
   "authors": [
-    "Me!"
+    "Nick.#1666"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "discord": "Nick.#1666",
+    "homepage": "https://github.com/nick-1666/fabricfine",
+    "sources": "https://github.com/nick-1666/fabricfine"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
+    "client": [
+      "nick1666.dev.fabricfine.Fabricfine"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
-
+  "mixins": [{
+    "config": "ffm.mixins.json",
+    "environment": "client"
+  }],
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
