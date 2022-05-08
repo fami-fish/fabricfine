@@ -1,3 +1,3 @@
-# Fabricfine Capes
+# Fabricfine
 
-A fabric mod to render optifine capes without optifine/optifabric. Fully sodium compatible and works all by itself
+A fabric mod to emulate optifine features for fabric whilst allowing different rendering engines such as sodium
